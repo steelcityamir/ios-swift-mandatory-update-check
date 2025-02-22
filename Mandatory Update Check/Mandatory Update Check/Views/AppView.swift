@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct AppView: View {
-    @State private var versionCheck = VersionCheckManager()
+    @StateObject private var versionCheck = VersionCheckManager()
     
     var body: some View {
         Group {

@@ -8,9 +8,8 @@
 
 import SwiftUI
 
-@Observable
-class VersionCheckManager {
-    var isUpdateRequired: Bool = false
+class VersionCheckManager: ObservableObject {
+    @Published var isUpdateRequired: Bool = false
     private let remoteURL = URL(string: "https://raw.githubusercontent.com/steelcityamir/ios-swift-mandatory-update-check/main/Mandatory%20Update%20Check/Mandatory%20Update%20Check/minimum-version.json")!
     
     func checkForUpdate() {
