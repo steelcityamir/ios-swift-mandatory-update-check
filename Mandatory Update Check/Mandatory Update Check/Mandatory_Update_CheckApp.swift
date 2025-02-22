@@ -8,10 +8,10 @@
 import SwiftUI
 
 @main
-struct Mandatory_Update_CheckApp: App {
+struct Mandatory_Update_CheckApp: App {    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AppView()
         }
     }
 }

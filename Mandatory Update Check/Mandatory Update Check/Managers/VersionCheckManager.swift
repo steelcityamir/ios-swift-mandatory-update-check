@@ -10,7 +10,7 @@ import SwiftUI
 
 class VersionCheckManager: ObservableObject {
     @Published var isUpdateRequired: Bool = false
-    private let remoteURL = URL(string: "https://example.com/version.json")!
+    private let remoteURL = URL(string: "https://raw.githubusercontent.com/steelcityamir/ios-swift-mandatory-update-check/main/Mandatory%20Update%20Check/Mandatory%20Update%20Check/minimum-version.json")!
     
     func checkForUpdate() {
         guard let infoDictionary = Bundle.main.infoDictionary,
@@ -40,7 +40,7 @@ class VersionCheckManager: ObservableObject {
             
             do {
                 if let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any],
-                   let minVersion = json["min_version"] as? String {
+                   let minVersion = json["minimumVersion"] as? String {
                     completion(minVersion)
                 } else {
                     completion(nil)

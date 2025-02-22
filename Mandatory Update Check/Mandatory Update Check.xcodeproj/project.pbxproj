@@ -35,16 +35,6 @@
 			path = "Mandatory Update Check";
 			sourceTree = "<group>";
 		};
-		29A299F62D6A55D700B8805A /* Mandatory Update CheckTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Mandatory Update CheckTests";
-			sourceTree = "<group>";
-		};
-		29A29A002D6A55D700B8805A /* Mandatory Update CheckUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Mandatory Update CheckUITests";
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,8 +66,6 @@
 			isa = PBXGroup;
 			children = (
 				29A299E52D6A55D500B8805A /* Mandatory Update Check */,
-				29A299F62D6A55D700B8805A /* Mandatory Update CheckTests */,
-				29A29A002D6A55D700B8805A /* Mandatory Update CheckUITests */,
 				29A299E42D6A55D500B8805A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -130,9 +118,6 @@
 			dependencies = (
 				29A299F52D6A55D700B8805A /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				29A299F62D6A55D700B8805A /* Mandatory Update CheckTests */,
-			);
 			name = "Mandatory Update CheckTests";
 			packageProductDependencies = (
 			);
@@ -152,9 +137,6 @@
 			);
 			dependencies = (
 				29A299FF2D6A55D700B8805A /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				29A29A002D6A55D700B8805A /* Mandatory Update CheckUITests */,
 			);
 			name = "Mandatory Update CheckUITests";
 			packageProductDependencies = (
@@ -404,6 +386,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -433,6 +416,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
